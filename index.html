@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>성격유형(personality type)Test Disc (Dominance,Influence,Steadiness,Conscientiousness) </title>
+    <meta name="discription" content="DISC는 여러분의 '행동유형(behavior)' 을 진단합니다. 이러한 인식을 축으로 인간의 행동을 각각 주도형(Dominance), 사교형(Influence), 안정형(Steadiness), 신중형(Compliance) 으로 나누었습니다.">
+    <meta name="keyword" content="DISC, 성격유형, 행동유형,behavior, 주도형 , Dominance, 사교형, Influence, 안정형, Steadiness, 신중형, Compliance ,심리테스트">
+    <meta name="robots" content="index,follow">
+    <meta property="og:site_name" content="성격유형(personality type)Test Disc (Dominance,Influence,Steadiness,Conscientiousness)">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./image/floppy.jpg">
+    
+
+    <meta property="og:type" content="website">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+        .container{
+           
+           margin:auto;
+           display: flex;
+           justify-content: center;
+        }
+       
+        .table-responsive-sm{
+            margin: auto;
+           
+        }
+        .jmok{
+            border: 1px solid black;
+            margin:auto;
+            
+        }
+        .jmokin{
+            margin-top: 20px;
+            text-align: center;
+           
+        }
+        .myimg{
+            width:100px;
+            overflow:hidden;
+            
+        }
+        .table{
+           
+            margin:auto
+            
+        }
+        .ind{
+            float: left;
+            width: 50px;
+            height: 50px;
+            font-size: small;
+            text-align: center;
+            border: 1px solid #bcbcbc;
+            margin:auto;
+
+            
+        }
+        .col{
+            float: left;
+            width: 110px;
+            height: 50px;
+            font-size: small;
+            text-align:left;
+            border: 1px solid #bcbcbc;
+            margin:auto;
+        }
+        .check{
+            margin-right: 2px;
+        }
+        .type{
+            border:1px solid black
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form name="searchForm" onsubmit="return false" method="post">
+            <div class="jmok">
+                <div class="jmokin"><h1 class="jmokin_in">성격테스트(disc)</h1></div>
+                <div class="jmokin"><h5>※ 각 행당 하나만 선택해 주세요(4개중 택 1)</h5></div>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <td class="ind"> 번호</td><td class="col"></td><td class="col"></td><td class="col"></td><td class="col"></td>  
+                </table>
+            </div>
+            
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">1</td><td class="col"><input type="checkbox" name = "d" class="check">모험적인</td><td class="col"><input type="checkbox" name = "i" class="check">활기찬</td><td class="col"><input type="checkbox" name = "s" class="check">순응하는</td><td class="col"><input type="checkbox" name = "c" class="check">분석적인</td>
+                </table>
+            </div>
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">2</td><td class="col"><input type="checkbox" name = "d" class="check">직관력 있는</td><td class="col"><input type="checkbox" name = "i" class="check">장난스러운</td><td class="col"><input type="checkbox" name = "s" class="check">끈기 있는</td><td class="col"><input type="checkbox" name = "c" class="check">일관성 있는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">3</td><td class="col"><input type="checkbox" name = "d" class="check">의지가 강한</td><td class="col"><input type="checkbox" name = "i" class="check">매력 있는</td><td class="col"><input type="checkbox" name = "s" class="check">순종적인</td><td class="col"><input type="checkbox" name = "c" class="check">희생적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+                
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">4</td><td class="col"><input type="checkbox" name = "d" class="check">경쟁적인</td><td class="col"><input type="checkbox" name = "i" class="check">잘 받아들이는</td><td class="col"><input type="checkbox" name = "s" class="check">차분한</td><td class="col"><input type="checkbox" name = "c" class="check">신중한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">5</td><td class="col"><input type="checkbox" name = "d" class="check">타협하지 않는</td><td class="col"><input type="checkbox" name = "i" class="check">참신한</td><td class="col"><input type="checkbox" name = "s" class="check">절제하는</td><td class="col"><input type="checkbox" name = "c" class="check">꼼꼼한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">6</td><td class="col"><input type="checkbox" name = "d" class="check">두려움 없는</td><td class="col"><input type="checkbox" name = "i" class="check">생기 넘치는</td><td class="col"><input type="checkbox" name = "s" class="check">만족하는</td><td class="col"><input type="checkbox" name = "c" class="check">정교한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">7</td><td class="col"><input type="checkbox" name = "d" class="check">긍정적인</td><td class="col"><input type="checkbox" name = "i" class="check">촉진 시키는</td><td class="col"><input type="checkbox" name = "s" class="check">참을성 있는</td><td class="col"><input type="checkbox" name = "c" class="check">계획을 세우는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">8</td><td class="col"><input type="checkbox" name = "d" class="check">확신적인</td><td class="col"><input type="checkbox" name = "i" class="check">표현력 있는</td><td class="col"><input type="checkbox" name = "s" class="check">믿음직한</td><td class="col"><input type="checkbox" name = "c" class="check">논리적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">9</td><td class="col"><input type="checkbox" name = "d" class="check">솔직한</td><td class="col"><input type="checkbox" name = "i" class="check">낙관적인</td><td class="col"><input type="checkbox" name = "s" class="check">협동적인</td><td class="col"><input type="checkbox" name = "c" class="check">조직적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">10</td><td class="col"><input type="checkbox" name = "d" class="check">추진력 있는</td><td class="col"><input type="checkbox" name = "i" class="check">재미있는</td><td class="col"><input type="checkbox" name = "s" class="check">친절한</td><td class="col"><input type="checkbox" name = "c" class="check">성실한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">11</td><td class="col"><input type="checkbox" name = "d" class="check">대담한</td><td class="col"><input type="checkbox" name = "i" class="check">함께 있기 즐거운</td><td class="col"><input type="checkbox" name = "s" class="check">안정적인</td><td class="col"><input type="checkbox" name = "c" class="check">예의 있는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">12</td><td class="col"><input type="checkbox" name = "d" class="check">자신 있는</td><td class="col"><input type="checkbox" name = "i" class="check">명랑한</td><td class="col"><input type="checkbox" name = "s" class="check">평화로운</td><td class="col"><input type="checkbox" name = "c" class="check">예술적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">13</td><td class="col"><input type="checkbox" name = "d" class="check">독립적인</td><td class="col"><input type="checkbox" name = "i" class="check">영감 있는</td><td class="col"><input type="checkbox" name = "s" class="check">느긋한</td><td class="col"><input type="checkbox" name = "c" class="check">이상적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">14</td><td class="col"><input type="checkbox" name = "d" class="check">결단력 있는</td><td class="col"><input type="checkbox" name = "i" class="check">설득력 있는</td><td class="col"><input type="checkbox" name = "s" class="check">평판이 좋은</td><td class="col"><input type="checkbox" name = "c" class="check">심오한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">15</td><td class="col"><input type="checkbox" name = "d" class="check">도덕적인</td><td class="col"><input type="checkbox" name = "i" class="check">대인관계 잘하는</td><td class="col"><input type="checkbox" name = "s" class="check">변치 않는</td><td class="col"><input type="checkbox" name = "c" class="check">겸손한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">16</td><td class="col"><input type="checkbox" name = "d" class="check">행동하는</td><td class="col"><input type="checkbox" name = "i" class="check">흥미진진한</td><td class="col"><input type="checkbox" name = "s" class="check">관용적인</td><td class="col"><input type="checkbox" name = "c" class="check">사고적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">17</td><td class="col"><input type="checkbox" name = "d" class="check">용감한</td><td class="col"><input type="checkbox" name = "i" class="check">말을 잘하는</td><td class="col"><input type="checkbox" name = "s" class="check">섬기는</td><td class="col"><input type="checkbox" name = "c" class="check">체계적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">18</td><td class="col"><input type="checkbox" name = "d" class="check">생산적인</td><td class="col"><input type="checkbox" name = "i" class="check">귀여운</td><td class="col"><input type="checkbox" name = "s" class="check">자족하는</td><td class="col"><input type="checkbox" name = "c" class="check">주의 깊은</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">19</td><td class="col"><input type="checkbox" name = "d" class="check">지도자</td><td class="col"><input type="checkbox" name = "i" class="check">분위기 메이커</td><td class="col"><input type="checkbox" name = "s" class="check">중재자</td><td class="col"><input type="checkbox" name = "c" class="check">설계자</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">20</td><td class="col"><input type="checkbox" name = "d" class="check">담대한</td><td class="col"><input type="checkbox" name = "i" class="check">통통 튀는</td><td class="col"><input type="checkbox" name = "s" class="check">균형 잡힌</td><td class="col"><input type="checkbox" name = "c" class="check">옳게 행동하는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">21</td><td class="col"><input type="checkbox" name = "d" class="check">지배적인</td><td class="col"><input type="checkbox" name = "i" class="check">나타내기 좋아함</td><td class="col"><input type="checkbox" name = "s" class="check">무표정한</td><td class="col"><input type="checkbox" name = "c" class="check">비판적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">22</td><td class="col"><input type="checkbox" name = "d" class="check">동정심 없는</td><td class="col"><input type="checkbox" name = "i" class="check">훈련되지 않은</td><td class="col"><input type="checkbox" name = "s" class="check">열정이 없는</td><td class="col"><input type="checkbox" name = "c" class="check">용서하지 않는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">23</td><td class="col"><input type="checkbox" name = "d" class="check">거만한</td><td class="col"><input type="checkbox" name = "i" class="check">과장하는</td><td class="col"><input type="checkbox" name = "s" class="check">표현하지 않는</td><td class="col"><input type="checkbox" name = "c" class="check">원망하는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">24</td><td class="col"><input type="checkbox" name = "d" class="check">직선적인</td><td class="col"><input type="checkbox" name = "i" class="check">잘 잊어버리는</td><td class="col"><input type="checkbox" name = "s" class="check">걱정이 많은</td><td class="col"><input type="checkbox" name = "c" class="check">작은일 연연하는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">25</td><td class="col"><input type="checkbox" name = "d" class="check">참을성 없는</td><td class="col"><input type="checkbox" name = "i" class="check">말로 가로막는</td><td class="col"><input type="checkbox" name = "s" class="check">우유부단한</td><td class="col"><input type="checkbox" name = "c" class="check">융통성 없는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">26</td><td class="col"><input type="checkbox" name = "d" class="check">거친</td><td class="col"><input type="checkbox" name = "i" class="check">예측할 수 없는</td><td class="col"><input type="checkbox" name = "s" class="check">참여하지 않는</td><td class="col"><input type="checkbox" name = "c" class="check">인기 없는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">27</td><td class="col"><input type="checkbox" name = "d" class="check">완고한</td><td class="col"><input type="checkbox" name = "i" class="check">되는대로의</td><td class="col"><input type="checkbox" name = "s" class="check">망설이는</td><td class="col"><input type="checkbox" name = "c" class="check">기쁘게 하기 힘든</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">28</td><td class="col"><input type="checkbox" name = "d" class="check">독선적인</td><td class="col"><input type="checkbox" name = "i" class="check">쉽게 타협하는</td><td class="col"><input type="checkbox" name = "s" class="check">평이한</td><td class="col"><input type="checkbox" name = "c" class="check">계산적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">29</td><td class="col"><input type="checkbox" name = "d" class="check">논쟁적인</td><td class="col"><input type="checkbox" name = "i" class="check">감정기복이 심한</td><td class="col"><input type="checkbox" name = "s" class="check">목표가 없는</td><td class="col"><input type="checkbox" name = "c" class="check">융화되지 않는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">30</td><td class="col"><input type="checkbox" name = "d" class="check">뻔뻔스러운</td><td class="col"><input type="checkbox" name = "i" class="check">외향을 중시하는</td><td class="col"><input type="checkbox" name = "s" class="check">냉담한</td><td class="col"><input type="checkbox" name = "c" class="check">부정적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">31</td><td class="col"><input type="checkbox" name = "d" class="check">일중독</td><td class="col"><input type="checkbox" name = "i" class="check">인정받기 바라는</td><td class="col"><input type="checkbox" name = "s" class="check">소심한</td><td class="col"><input type="checkbox" name = "c" class="check">고지식한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">32</td><td class="col"><input type="checkbox" name = "d" class="check">대화기술이 없는</td><td class="col"><input type="checkbox" name = "i" class="check">말이 많은</td><td class="col"><input type="checkbox" name = "s" class="check">미루는</td><td class="col"><input type="checkbox" name = "c" class="check">예민한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">33</td><td class="col"><input type="checkbox" name = "d" class="check">공격적인</td><td class="col"><input type="checkbox" name = "i" class="check">조직적이지 못한</td><td class="col"><input type="checkbox" name = "s" class="check">회피하는</td><td class="col"><input type="checkbox" name = "c" class="check">음흉한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">34</td><td class="col"><input type="checkbox" name = "d" class="check">기회주의적인</td><td class="col"><input type="checkbox" name = "i" class="check">변덕스러운</td><td class="col"><input type="checkbox" name = "s" class="check">무관심한</td><td class="col"><input type="checkbox" name = "c" class="check">내성적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">35</td><td class="col"><input type="checkbox" name = "d" class="check">조종하는</td><td class="col"><input type="checkbox" name = "i" class="check">지저분한</td><td class="col"><input type="checkbox" name = "s" class="check">중얼거리는</td><td class="col"><input type="checkbox" name = "c" class="check">우울한</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">36</td><td class="col"><input type="checkbox" name = "d" class="check">경솔한</td><td class="col"><input type="checkbox" name = "i" class="check">산만한</td><td class="col"><input type="checkbox" name = "s" class="check">느린</td><td class="col"><input type="checkbox" name = "c" class="check">회의적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">37</td><td class="col"><input type="checkbox" name = "d" class="check">군림하는</td><td class="col"><input type="checkbox" name = "i" class="check">요란한</td><td class="col"><input type="checkbox" name = "s" class="check">게으른</td><td class="col"><input type="checkbox" name = "c" class="check">혼자 있는</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">38</td><td class="col"><input type="checkbox" name = "d" class="check">다혈질의</td><td class="col"><input type="checkbox" name = "i" class="check">집중력이 없는</td><td class="col"><input type="checkbox" name = "s" class="check">쳐져 있는</td><td class="col"><input type="checkbox" name = "c" class="check">의심 많은</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">39</td><td class="col"><input type="checkbox" name = "d" class="check">급한</td><td class="col"><input type="checkbox" name = "i" class="check">쉼이 없는</td><td class="col"><input type="checkbox" name = "s" class="check">수동적인</td><td class="col"><input type="checkbox" name = "c" class="check">자의식이 낮은</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind">40</td><td class="col"><input type="checkbox" name = "d" class="check">교활한</td><td class="col"><input type="checkbox" name = "i" class="check">즉흥적인</td><td class="col"><input type="checkbox" name = "s" class="check">타협하는</td><td class="col"><input type="checkbox" name = "c" class="check">비판적인</td>
+                </table>
+            </div>
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <td class="ind" >합계</td><td class="col" id="outputd"></td></td><td class="col" id="outputi"></td></td><td class="col" id="outputs"></td></td><td class="col" id="outputc"></td>
+                </table>
+            </div>
+            <br>
+            <input type="submit" value="전송" onClick="this.style.visibility='hidden';return_value()">
+            </div>
+            <br>
+            <div class="table-responsive-sm" id="htmloutput">
+
+            </form> 
+    </div>
+    <script>
+        function return_value(){
+            const checkboxd = document.getElementsByName('d');
+            const checkboxi = document.getElementsByName('i');
+            const checkboxs = document.getElementsByName('s');
+            const checkboxc = document.getElementsByName('c');
+            let countd = 0;
+            let counti = 0;
+            let counts = 0;
+            let countc = 0;
+            for (var i = 0 ; i<checkboxd.length; i++){
+                if(checkboxd[i].checked){
+                    countd ++;
+                }
+            }
+            for (var i = 0 ; i<checkboxi.length; i++){
+                if(checkboxi[i].checked){
+                    counti ++;
+                }
+            }
+            for (var i = 0 ; i<checkboxs.length; i++){
+                if(checkboxs[i].checked){
+                    counts ++;
+                }
+            }
+            for (var i = 0 ; i<checkboxc.length; i++){
+                if(checkboxc[i].checked){
+                    countc ++;
+                }
+            }
+            document.querySelector('#outputd').append(countd);
+            document.querySelector('#outputi').append(counti);
+            document.querySelector('#outputs').append(counts);
+            document.querySelector('#outputc').append(countc);
+           
+            const countM = Math.max(countd,counti,countc,counts);
+            if(countM == countd){
+                document.getElementById('htmloutput').innerHTML =  `<h2> D 주도형(담즙)</h2>
+                <h5>팀원일때</h5>
+                <br>
+                
+                <ul class="type">
+                    <li>작은 역할이라도 역할을 맡겨 성취감을 느낄 수 있도록 한다.</li>
+                    <li>어떠한 일을 계획하고 추진할 때 적극적으로 참여시킨다.</li>
+                    <li>장황하게 설명하지 않고 간략하게 핵심만 설명한다. (비효율적인 것 싫어함)</li>
+                    <li>감정에 호소하기보다 논리적, 합리적, 객관적으로 설득한다.</li>
+                    <li>우유부단하거나 의존적인 모습을 힘들어한다.</li>
+                    <li>'공은 공이고 사는 사다‘ 라고 생각한다.</li>
+                    <li>규칙과 법을 어기는 것을 힘들어한다.</li>
+                    <li>핵심이나 주제를 벗어나는 이야기나 개인적인 에피소드를 나누는 것을 좋아하지 않는다.</li>
+                    <li>시작과 마치는 시간을 지키지 않으면 화가 난다. (시간) 허비 싫어함).</li>
+                    <li>주로 사고형이므로 감정의 교류를 어색해한다.</li>
+                    <li>완벽주의 기질이 있다.</li>
+                    <li>힘의 욕구가 강하고 통제 욕구가 있다.</li>
+                    <li>직관이 가장 뛰어나다.</li>
+                    <li>성격이 가장 급하고, 말에 상처를 주기 쉽다.</li>
+                    <li>자신감이 넘치기에 거만해 보일 수 있다.</li>
+            
+                </ul>
+                <h5>팀장일때</h5>
+                <br>
+                <ul class="type">
+                    <li><h4>높은 결과(성과)를 최대한 효율적으로 빠른 시일 내에 얻기를 원한다.</h4></li>
+                    <li>리더의 강압적인 태도에 눌려서 할 말을 제대로 하지 못함</li>
+                    <li>솔직한 이야기보다는 그 리더가 원하는 정답을 말하려고 노력함</li>
+                    <li>쉽게 수용과 인정을 받는 느낌이 잘 없음</li>
+                    <li>갑작스러운 지시나 분노의 표현에 당황하는 경우가 많음</li>
+                    <li>업무적인 것 외에는 나와 관계하지 않는다고 생각할 수 있음</li>
+                    <li>성과를 재촉하여 늘 쫓기는 느낌을 받음</li>
+                    <li>일을 세세하게 지시하기보다는 던짐</li>
+                    <li>억울한 생각이 종종 드는 경우가 있음</li>
+                    <li>속도(재촉) : 점액, 우울과 갈등 예상</li>
+                    <li>일 중심(성과 중심) : 점액, 다혈과 갈등 예상</li>
+                    <li>지시 스타일(큰 그림을 던지거나 즉흥적으로 지시)우울, 점액과 갈등 예상</li>
+                </ul>`;
+    
+            }else if(countM == counti){
+                document.getElementById('htmloutput').innerHTML = `<h2>| 사교형 (다혈)</h2>
+                <h5>팀원일때</h5>
+                <br>
+                <ul class="type">
+                    <li>혼자 있게 두면 힘들어한다. (화장실도 같이 가야 한다)</li>
+                    <li>무조건 챙겨주고 또 챙겨줘야 한다.</li>
+                    <li>침묵을 참지 못하고 어색한 분위기를 아주 힘들어하니 대화를 계속 이어가야 한다.</li>
+                    <li>처음 만났지만 오랜 친구처럼 친밀하게 대해 준다.</li>
+                    <li>호기심이 많으므로 궁금한 것을 물을 때 친절하게 대답해준다.</li>
+                    <li>밝은 표정과 부드러운 말투 그리고 과한 리액션으로 공감해 준다. (표정만으로도 직감함)</li>
+                    <li>무한 칭찬, 격려를 반복해서 해줘야 한다.</li>
+                    <li>눈치를 많이 보고 분위기를 계속 파악하려고 노력한다.</li>
+                    <li>많은 사람을 소개해서 연결해주는 것을 좋아한다. (오지랖)</li>
+                    <li>노는 모임에 불러주는 것을 좋아한다. (공부※, 진지모드X)</li>
+                    <li>관심을 계속해서 가져줘야 한다. (외로움이 많음)</li>
+                    <li>주인공이 되고 싶어 하며 센터 본능과 무대 본능이 있다.</li>
+                    <li>감정에 호소하거나 감동을 주면 설득된다.</li>
+                    <li>경직된 분위기, 구속하는 분위기, 융통성 없는 분위기 힘들어한다. (자유롭고 허용적 분위기)</li>
+                    <li>시간을 잘 지키지 못한다. (시간을 못 지킬 때 대하는 태도 중요함)</li>
+                    <li>핵심과 주제를 벗어난 이야기를 시간 가는 줄 모르고 한다. (말 끊으면 기분 나빠함)</li>
+                    <li>감성적인 공간에서 먹는 맛있는 음식과 차를 좋아한다. 그러나 무엇보다 함께하는 사람이 중요 하다. 혼자 다니지 않는다.</li>
+                    <li>과장된 표현이 있을 수 있기에 사실이 아닌 부분이 있을 수 있음을 주의한다.</li>
+                </ul>
+                <h5>팀장일때</h5>
+                <br>
+                <ul class="type">
+                    <li><h4>사람과의 관계에서 갈등이 없이 높은 성과를 빨리 얻기를 원한다.</h4></li>
+                    <li>일은 쉽게 시작하여 벌려놓으나 끝맺음이 부족한 것을 보면 답답함</li>
+                    <li>아이디어나 계획은 많으나 이상적이고 현실성이 없는 것들이 많음</li>
+                    <li>말만 하는(많은) 것 같은 느낌이 들 때가 있음</li>
+                    <li>즉흥적이라서 계획적인 스타일들은 당황스러움(무리한 약속과 스케쥴)</li>
+                    <li>일이 순서나 질서 및 체계성이 부족해 보임</li>
+                    <li>상황과 감정에 따라 규칙과 원칙이 달라짐(일관성 부족, 신뢰가 떨어짐)</li>
+                    <li>시간 개념이 없어서 힘든 경우가 많음</li>
+                    <li>일을 동시에 여러 가지 시작함(거절을 잘 못하고 맺고 끊지 못해서)</li>
+                    <li>회의가 산으로 감</li>
+                    <li>지나치게 낙관, 낙천적임</li>
+                    <li>속도(빠른 편이나 관계 중심적이라 눈치 보며 재촉은 하지 못함)</li>
+                    <li>관계 중심(사람 중심): 담즙, 우울과 갈등 예상</li>
+                    <li>지시 스타일 (구체적이지 않고 즉흥적으로 지시: 우울과 갈등 예상</li>
+                </ul>
+            `;
+            }else if(countM == counts){
+                document.getElementById('htmloutput').innerHTML = ` <h2>S 안정형 (점액)</h2>
+                <h5>팀원일때</h5>
+                <br>
+                <ul class="type">
+                    <li>너무 과한 리액션으로 접근하지 않는다.</li>
+                    <li>개인적인 질문은 천천히 한다.</li>
+                    <li>분위기에 휩쓸려 선택, 결정하는 경우가 많아서 진정한 결정이라고 할 수 없다.</li>
+                    <li>표정은 늘 온화하지만 속은 그렇지 않을 수 있으므로 잘 살펴야 한다.</li>
+                    <li>서운한 것을 오래 기억하고 있고 빠진 것을 표를 내지 않는다.</li>
+                    <li>꾸준하게 성실하게 섬기는 모습을 보여주어야 마음을 연다.</li>
+                    <li>개인적으로 만나는 1:1 만남을 선호한다.</li>
+                    <li>상대를 신뢰하는 데 시간이 걸리는 편이다.</li>
+                    <li>말하는 것보다 듣는 것을 좋아한다.</li>
+                    <li>압박, 강압적인 분위기를 힘들어한다.</li>
+                    <li>힘든 상황이 생기면 있는 듯 없는 듯하다 잠수함을 타거나 어느 순간 보이지 않는다.</li>
+                    <li>느긋하여 쫓기는 압박상황 힘들어한다.</li>
+                    <li>갈등 상황을 힘들어하고 거절을 잘하지 못한다.</li>
+                    <li>에너지가 작은 편이라 많은 일을 동시에 진행하는 것을 힘들어한다.</li>
+                    <li>친절하고 다정한 스타일이라 반대의 경우(담즙)는 힘들어한다.</li>
+                    <li>충성심이 강하고 성실하다.</li>
+                    <li>안정을 추구하며 변화를 싫어한다.</li>
+                    <li>내적인 고집이 있다.</li>
+                    <li>부끄러움이 많고 수줍어한다.</li>
+                    <li>답은 본인이 정해놓고 상담을 요청하여 반복적으로 이야기하는 경우가 있다.</li>
+                </ul>
+                <h5>팀장일때</h5>
+                <br>
+                <ul class="type">
+                    <li><h4>조직의 평화를 중시하고 결과보다 과정을 중시하며 성실하게 꾸준히 한다.</h4></li>
+                    <li>표현을 잘 하지 않아 리더의 속을 알 수 없어서 답답한 경우가 많음</li>
+                    <li>원하는 것을 말하지 않고 은근히 알아서 해주기를 기대함</li>
+                    <li>일의 성과가 드러날 때까지 시간이 너무 오래 걸림</li>
+                    <li>일을 잘 못 맡기고 스스로 다 하려고 함</li>
+                    <li>거절을 잘하지 못해서 스스로 감당할 수 없는 일의 양이 되어 결국 펑크가 나는 경우가 있음</li>
+                    <li>변화를 싫어하고 안정적인 것을 선호함</li>
+                    <li>내적 고집이 있음(내적 신념과는 다름)</li>
+                    <li>일의 결정에서 우유부단한 느낌을 주기에 답답할 수 있음</li>
+                    <li>갈등이나 문제를 돌파 (직면)하지 않고 받아들이거나 회피함</li>
+                    <li>지나치게 관대한 경향이 있음</li>
+                    <li>속도(느림): 담즙, 다혈과 갈등</li>
+                    <li>관계 중심(사람 중심): 담즙, 우울과 갈등</li>
+                 </ul>`;
+            }else if(countM == countc){
+                document.getElementById('htmloutput').innerHTML =`<h2>C 신중형 (우울)</h2>
+                <h5>팀원일때</h5>
+                <br>
+                <ul class="type">
+                    <li>너무 과한 리액션은 힘들어하며 관심조차도 힘들어한다. 사람 많은 곳도 힘들다.</li>
+                    <li>이야기를 많이 거는 것 힘들다. 사담을 좋아하지 않는다. (그래서 어쩌라고 표정임)</li>
+                    <li>시스템 등이 조직화, 체계적인지를 확인한다.</li>
+                    <li>사고 자체가 논리적, 객관적, 합리적이다.</li>
+                    <li>독서와 깊이 생각하고 연구하는 것을 좋아한다.</li>
+                    <li>이유 없는 무조건적 칭찬은 싫어한다.</li>
+                    <li>도덕적 가치 기준이 높고, 원칙에 어긋남을 싫어한다.</li>
+                    <li>완벽주의 기질이 있다. 완벽하게 준비되지 않다 싶으면 실행하지 않는다.</li>
+                    <li>정확한 지시, 자료, 전달이 있어야 힘들어하지 않는다. (대중 해봐요. 하면 힘듦)</li>
+                    <li>일을 구조화(매뉴얼) 시키는 데 최적화되어 있다.</li>
+                    <li>시간 개념과 자기 관리가 철저하다.</li>
+                    <li>여러 가지 일을 동시에 하지 않으며 일과 관련하여 재촉하면 힘들어한다.</li>
+                    <li>계획하는 데 시간이 오래 걸리며, 계획이 변경되면 힘들어한다.</li>
+                    <li>즉흥적인 일이나 모임 등을 싫어한다.</li>
+                    <li>감정이 열리는 데 가장 어려운 유형이다. (감정교류의 필요성도.그다지 느끼지 않음)</li>
+                    <li>다혈의 오지랖을 힘들어하지만 그들의 따뜻함을 은근히 좋아하기도 한다.</li>
+                    <li>핵심을 잘 파악하여 주제가 벗어나면 다시 주제로 돌아오게 한다.</li>
+                    <li>내적 신념이 가장 강한 유형이다.</li>
+                    <li>양적인 것보다 질적 가치와 깊이를 추구한다.</li>
+                    <li>비판적이고, 부정적인 편이며 의심이 많다.</li>
+                    <li>잘못을 잘 인정하지 않는다.</li>
+                </ul>
+                <h5>팀장일때</h5>
+                <br>
+                <ul class="type">
+                    <li><h4>원칙적인 절차로 일이 질적으로 깊이 있고 완벽하게 완성되기를 원한다.</h4></li>
+                    <li>원리 원칙을 중시하기에 융통성이 부족해 일의 유연함이 부족함</li>
+                    <li>질을 중시하는 완벽주의라 시간이 너무 오래 걸림(너무 꼼꼼하여 답답함)</li>
+                    <li>정리하고 계획하는 데에 에너지를 너무 쏟음(실행하기도 전에 소진)</li>
+                    <li>너무 세세한 설명과 느린 속도에 다혈, 담즙은 숨이 넘어감</li>
+                    <li>자기 신념이 강해 설득해도 좀처럼 설득되지 않음</li>
+                    <li>감정교류를 잘 하지 않고 공감력이 낮은 편이라 상담 시 공감보다는 설명하고 교육하려고 함 (전문적인 용어나 지식을 설명함)</li>
+                    <li>현실 가능성이 없으면 도전하지 않으려 함</li>
+                    <li>비판에 내해 예민하게 반응함</li>
+                    <li>일을 추진해 가는데 너무 조심스러워하며 크게 보기보다는 세부적인 것에 얽매여 함</li>
+                    <li>속도(느림): 담즙, 다혈과 갈등</li>
+                    <li>일 중심(완벽 추구): 다혈, 점액과 갈등</li>
+                    <li>지시 스타일(너무 세세하게 형식을 정해서 지시): 다혈, 담즙과 갈등</li>
+                </ul>`;
+            }else{
+                console.log("에러 입니다 다시해주세요 T.T 중복된 항목이 있을수도 있어요 ~~")
+            }
+              
+           
+                
+        }
+        
+    </script>
+</body>
+</html>
